@@ -1,9 +1,3 @@
-import smoothscroll from 'smoothscroll-polyfill';
-
-// kick off the polyfill!
-smoothscroll.polyfill();
-
-
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
