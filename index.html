@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b1977ef56c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
         <!-- <div class="toggle" onclick="toggleMenu()"></div> -->
-        <a id="btnHamburger" class="header__toggle hide-for-desktop"
-            onclick="toggleMenu()">
+        <a id="btnHamburger" class="header__toggle hide-for-desktop" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
-          </a>
+        </a>
         <ul class="menu">
             <li><a href="#" onclick="toggleMenu()">Home</a></li>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -28,127 +29,175 @@
         </ul>
     </header>
 
-<section class="banner">
-  <div class="textBx">
-    <h2>Hello, I'm<p class="name">Greg Schoenberg.</p class="name"></h2>
-    <h3>I'm a Front End Web Developer.</h3>
-    <a href="#about" class="btn">About Me</a>
-  </div>
-</section>
-
-<section class="about" id="about">
-    <div class="heading">
-        <h2>About Me</h2>
-    </div>
-    <div class="content">
-        <div class="contentBx w50">
+    <section class="banner">
+        <div class="textBx">
+            <h2>Hello, I'm<p class="name">Greg Schoenberg.</p class="name">
+            </h2>
             <h3>I'm a Front End Web Developer.</h3>
-            <p>I love to learn and create with current useful technologies. I have experience
-                creating web applications using React, Javascript, NodeJS, Express, HTML, 
-                CSS, Bootstrap, Responsive Design, Firebase, MongoDB. Bachelor's degree 
-                in Computer Science.  <br><br>Please scroll down to my work section to
-                see some of my recent projects. I'm always looking for new problems to solve.</p>
+            <a href="#about" class="btn">About Me</a>
         </div>
-        <div class="w50">
-            <img src="./images/img1.jpg" class="img">
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="projects" id="work">
-    <div class="heading light-heading">
-        <h2>Latest Work</h2>
-        <p>Some of my recent projects</p>
-    </div>
-    <div class="project-container">
-        <div class="project-header">
-        <div class="projects">
-            <div class="project-item">
-                <div class="issue-project">
-                    <div class="text-container">
-                        <h2 class="project-name">Issue Tracker</h2>
-                        <div class="project-description">
-                            <p>This is an Issue Tracker app developed with React plus hooks,
-                                Javascript, CSS, bootstrap, react routing, and connection with Firebase
-                                database for user authentication and data storage.
-                                On GitHub: <a href="https://github.com/GregNicholas/Issue-Tracker" target="_blank">Issue Tracker</a>
-                            </p>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a Front End Web Developer.</h3>
+                <p>I love to learn and create with current useful technologies. I have experience
+                    creating web applications using React, Javascript, NodeJS, Express, HTML,
+                    CSS, Bootstrap, Responsive Design, Firebase, MongoDB. Bachelor's degree
+                    in Computer Science. <br><br>Please scroll down to my work section to
+                    see some of my recent projects. I'm always looking for new problems to solve.</p>
+            </div>
+            <div class="w50">
+                <img src="./images/img1.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" id="work">
+        <div class="heading light-heading">
+            <h2>Latest Work</h2>
+            <p>Some of my recent projects</p>
+        </div>
+        <div class="project-container">
+            <div class="project-header">
+                <div class="projects">
+                    <div class="project-item">
+                        <div class="issue-project">
+                            <div class="text-container">
+                                <h2 class="project-name">Issue Tracker</h2>
+                                <div class="project-description">
+                                    <p>This is an Issue Tracker app developed with React with hooks,
+                                        Javascript, CSS, bootstrap, react routing, and connection with Firebase
+                                        database for user authentication and data storage.
+                                        <strong>GitHub:</strong> <a href="https://github.com/GregNicholas/Issue-Tracker"
+                                            target="_blank">Issue Tracker</a>
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <button class="button">
+                                        <h3>Live Site</h3>
+                                    </button>
+                                </a>
+                            </div>
                         </div>
-                        <a href="#">
-                            <button class="button">
-                                <h3>Live Site</h3>
-                            </button>
-                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="playground-project">
+                            <div class="text-container">
+                                <h2 class="project-name">Playground Point</h2>
+                                <div class="project-description">
+                                    <p>This project demonstrates a site where users can create, edit, and
+                                        delete pages for for playgrounds, upload pictures, add reviews.
+                                        Javascript, NodeJS, Express, MongoDB<br>
+                                        <strong>GitHub:</strong> <a
+                                            href="https://github.com/GregNicholas/PlaygroundPoint"
+                                            target="_blank">Playground Point</a>
+                                    </p>
+                                </div>
+                                <a href="https://dry-forest-25710.herokuapp.com/" target="_blank">
+                                    <button class="button">
+                                        <h3>Live Site</h3>
+                                    </button>
+                                </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="pickem-project">
+                            <div class="text-container">
+                                <h2 class="project-name">Football Pickem</h2>
+                                <div class="project-description">
+                                    <p>This is a football pickem app for a weekly competetion between users.
+                                        <br>
+                                        React JS, react-router, react-bootstrap, firebase authentication and storage.
+                                        <br>
+                                        <strong>GitHub:</strong>
+                                        <a href="https://github.com/GregNicholas/football-pickem-deploy"
+                                            target="_blank">Football Pickem</a>
+                                    </p>
+                                </div>
+                                <a href="https://football-pickem-45896.web.app/" target="_blank">
+                                    <button class="button">
+                                        <h3>Live Site</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="jetris-project">
+                            <div class="text-container">
+                                <h2 class="project-name">JS Tetris Game</h2>
+                                <div class="project-description">
+                                    <p>This is a tetris game using vanilla Javascript, HTML, and CSS
+                                        <strong>GitHub:</strong>
+                                        <a href="https://github.com/GregNicholas/Tetris/tree/Jetris2.0"
+                                            target="_blank">Javascript Tetris</a>
+                                    </p>
+                                </div>
+                                <a href="https://gregnicholas.github.io/Tetris/" target="_blank">
+                                    <button class="button">
+                                        <h3>Live Site</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item hidden-projects extra-projects">
+                        <div class="project quiz-project">
+                            <div class="text-container">
+                                <h2 class="project-name">Quizzical</h2>
+                                <div class="project-description">
+                                    <p>This is a quiz app in which a user can choose a category and difficulty,
+                                        then take a short quiz and get results
+                                        <br>
+                                        React, consumes data from opentdb.com
+                                    </p>
+                                </div>
+                                <a href="https://codesandbox.io/s/quizzical-bqcgc" target="_blank">
+                                    <button class="button">
+                                        <h3>CodeSandbox</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item hidden-projects extra-projects">
+                        <div class="project pokemon-project">
+                            <div class="text-container">
+                                <h2 class="project-name">Pokemon Finder</h2>
+                                <div class="project-description">
+                                    <p>This is an app to discover or search for info about the many pokemon.
+                                        <br>
+                                        React, consumes data from pokeapi.co
+                                    </p>
+                                </div>
+                                <a href="https://codesandbox.io/s/pokemon2-f7l3f" target="_blank">
+                                    <button class="button">
+                                        <h3>CodeSandbox</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading">
+                        <button class="btn" id="project-toggle" onclick="toggleProjectView()">View More</button>
                     </div>
                 </div>
             </div>
-
-            <div class="project-item">
-                <div class="playground-project">
-                    <div class="text-container">
-                        <h2 class="project-name">Playground Point</h2>
-                        <div class="project-description">
-                            <p>This project demonstrates a site that users can create
-                                posts for playgrounds, upload pictures, add review. It 
-                                is based on the Colt Steele's web developer bootcamp project
-                                with some added features. It uses Javascript, NodeJS, Express,
-                                and MongoDB.
-                                On GitHub: <a href="https://github.com/GregNicholas/PlaygroundPoint" target="_blank">Playground Point</a>
-                            </p>
-                        </div>
-                        <a href="https://dry-forest-25710.herokuapp.com/">
-                            <button class="button">
-                                <h3>View Project</h3>
-                            </button>
-                        </a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="pickem-project">
-                    <div class="text-container">
-                        <h2 class="project-name">Football Pickem</h2>
-                        <div class="project-description">
-                            <p>This React app is an football pickem app for a weekly competetion between users.
-                                On GitHub: <a href="https://github.com/GregNicholas/football-pickem-deploy" target="_blank">Football Pickem</a>
-                            </p>
-                        </div>
-                        <a href="https://football-pickem-45896.web.app/" target="_blank">
-                            <button class="button">
-                                <h3>View Project</h3>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="jetris-project">
-                    <div class="text-container">
-                        <h2 class="project-name">Pokemon Finder</h2>
-                        <div class="project-description">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, nulla?
-                            </p>
-                        </div>
-                        <a href="#">
-                            <button class="button">
-                                <h3>View Project</h3>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="heading">
-                <a href="#" class="btn">View More</a>
-            </div>
         </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- <section class="services" id="services">
+    <!-- <section class="services" id="services">
     <div class="heading dark">
         <h2>Services</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -182,16 +231,16 @@
     </div>
 </section> -->
 
-<section class="contact" id="contact">
-    <div class="heading">
-        <h2>Contact Me</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="content">
-        <div class="contactInfo">
-            <h3>Contact Info</h3>
-            <div class="contactInfoBx">
-                <!-- <div class="box">
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Me</h2>
+            <p>I would love to hear from you!</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <!-- <div class="box">
                     <div class="icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -200,44 +249,46 @@
                         <p>123 Sugar Street</br>ABCville, USA 12345</p>
                     </div>
                 </div> -->
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-phone"></i>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>650-454-7375</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>650-454-7375</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="far fa-envelope"></i></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>gregschoenberg@gmail.com</p>
+                    <div class="box">
+                        <div class="icon"><i class="far fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>gregschoenberg@gmail.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="formBx">
+                <form action="https://formsubmit.co/gregschoenberg@gmail.com" method="POST">
+                    <h3>Message Me</h3>
+                    <input type="hidden" name="_subject" value="New email from portfolio!">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="hidden" name="_next"
+                        value="https://gregnicholas.github.io/GregPortfolio/thankyou.html">
+                    <textarea type="text" name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
         </div>
-        <div class="formBx">
-            <form action="https://formsubmit.co/gregschoenberg@gmail.com" method="POST">
-                <h3>Message Me</h3>
-                <input type="hidden" name="_subject" value="New email from portfolio!">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="hidden" name="_next" value="https://gregnicholas.github.io/GregPortfolio/thankyou.html">
-                <textarea type="text" name="message" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </div>
+    </section>
+
+    <div class="copyright" id=copyright>
+
     </div>
-</section>
 
-<div class="copyright" id=copyright>
-    
-</div>
+    <script src="script.js">
 
-<script src="script.js">
-    
-</script>
+    </script>
 </body>
+
 </html>
