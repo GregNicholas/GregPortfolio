@@ -299,6 +299,14 @@ img {
     background-image: url(./images/footballPickemLogo.png);
 }
 
+.you-brew-project {
+    background-image: url(./images/YouBrewM.png);
+}
+
+.job-listings-project {
+    background-image: url(./images/job-listings.png);
+}
+
 .jetris-project {
     background-image: url(./images/jetris.jpg);
 }
@@ -601,4 +609,12 @@ img {
         font-size: 3rem;
         line-height: 3rem;
     }
+}
+
+.menu-links {
+    transition: all .5s;
+}
+.menu-links:hover {
+    color: #2196f3;
+    text-decoration: underline;
 }
