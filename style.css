@@ -315,6 +315,10 @@ img {
     background-image: url(./images/quiz.jpg);
 }
 
+.sunset-project {
+    background-image: url(./images/sunset-hills.png);
+}
+
 .bracket-project{
     background-image: url(./images/playoffs-bracket.png);
 }
