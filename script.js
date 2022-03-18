@@ -20,7 +20,7 @@ const toggleProjectView = (e) => {
     }
 
     if (toggleButton.innerText === "VIEW MORE") {
-        toggleButton.innerText = "HIDE"
+        toggleButton.innerText = "SHOW LESS"
     } else {
         toggleButton.innerText = "VIEW MORE"
     }
@@ -28,4 +28,3 @@ const toggleProjectView = (e) => {
 
 const date = new Date();
 document.getElementById("copyright").innerHTML = `&#169 Gregory Schoenberg ${date.getFullYear()}`;
-
