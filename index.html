@@ -14,7 +14,6 @@
 <body>
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <!-- <div class="toggle" onclick="toggleMenu()"></div> -->
         <a id="btnHamburger" class="header__toggle hide-for-desktop" onclick="toggleMenu()">
             <span></span>
             <span></span>
@@ -23,17 +22,16 @@
         <ul class="menu">
             <li><a href="#" class="menu-links" onclick="toggleMenu()">Home</a></li>
             <li><a href="#about" class="menu-links" onclick="toggleMenu()">About</a></li>
-            <!-- <li><a href="#services" onclick="toggleMenu()">Services</a></li> -->
             <li><a href="#projects" class="menu-links" onclick="toggleMenu()">Work</a></li>
-            <!-- <li><a href="#">Testimonial</a></li> -->
             <li><a href="#contact" class="menu-links" onclick="toggleMenu()">Contact</a></li>
         </ul>
     </header>
 
     <section class="banner">
         <div class="textBx">
-            <h2>Hello, I'm<p class="name">Greg Schoenberg.</p class="name">
-            </h2>
+            <!-- <h2>Hello, I'm<p class="name">Greg Schoenberg.</p class="name"> -->
+            <!-- </h2> -->
+            <h1 class="name">Greg Schoenberg.</h1>
             <h3>I'm a Front End Web Developer.</h3>
             <a href="#about" class="btn">About Me</a>
         </div>
@@ -71,14 +69,84 @@
                             <div class="text-container">
                                 <h2 class="project-name">Issue Tracker</h2>
                                 <div class="project-description">
-                                    <p>This is an Issue Tracker app developed with React with hooks,
-                                        Javascript, CSS, bootstrap, react routing, and connection with Firebase
+                                    <p> Add a new issue, assign to team member, update, and comment. 
+                                        Developed with React with hooks, Javascript, react-table, react 
+                                        routing, CSS, bootstrap, and connection with Firebase
                                         database for user authentication and data storage.
+                                        <br>
                                         <strong>GitHub:</strong> <a href="https://github.com/GregNicholas/IssuesTracker"
                                             target="_blank">Issue Tracker</a>
                                     </p>
                                 </div>
-                                <a href="https://issue-tracker-csb.vercel.app/">
+                                <a href="https://issue-tracker-csb.vercel.app/" target="_blank">
+                                    <button class="button">
+                                        <h3>Live Site</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project air-quality">
+                            <div class="text-container">
+                                <h2 class="project-name">AirQ</h2>
+                                <div class="project-description">
+                                    <p>AirQ is an air quality app developed with React with hooks,
+                                        Javascript, styled-components, CSS, react-leaflet maps, fetching data
+                                        at the user's request from AirVisual API. A user can look up locations with
+                                        air quality stations, view data, and save favorites in local storage.
+                                        <br>
+                                        <strong>GitHub:</strong> <a href="https://github.com/GregNicholas/air-quality"
+                                            target="_blank">AirQ</a>
+                                    </p>
+                                </div>
+                                <a href="https://csb-3m1df2-gregnicholas.vercel.app/" target="_blank">
+                                    <button class="button">
+                                        <h3>Live Site</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project you-brew-project">
+                            <div class="text-container">
+                                <h2 class="project-name">YouBrew</h2>
+                                <div class="project-description">
+                                    <p>This is a responsive, interactive landing page for "YouBrew" homebrew supplies store.
+                                        JavaScript, HTML, CSS, GSAP animations</br>
+                                        <strong>GitHub:</strong> <a href="https://github.com/GregNicholas/BrewYouLandingPage"
+                                            target="_blank">YouBrew</a>
+                                    </p>
+                                </div>
+                                <a href="https://youbrew.netlify.app/" target="_blank">
+                                    <button class="button">
+                                        <h3>Live Demo</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project pickem-project">
+                            <div class="text-container">
+                                <h2 class="project-name">Football Pickem</h2>
+                                <div class="project-description">
+                                    <p>Pickem app for weekly and season long competition.
+                                        Users can winners for the weekly games. Ongoing results
+                                        are displayed in tables.
+                                        <br>
+                                        React JS, context, react-router, react-bootstrap, firebase authentication and storage.
+                                        <br>
+                                        <strong>GitHub:</strong>
+                                        <a href="https://github.com/GregNicholas/football-pickem-deploy"
+                                            target="_blank">Football Pickem</a>
+                                    </p>
+                                </div>
+                                <a href="https://football-pickem-45896.web.app/" target="_blank">
                                     <button class="button">
                                         <h3>Live Site</h3>
                                     </button>
@@ -110,61 +178,18 @@
                         </div>
                     </div>
 
-                    <div class="project-item">
-                        <div class="project pickem-project">
-                            <div class="text-container">
-                                <h2 class="project-name">Football Pickem</h2>
-                                <div class="project-description">
-                                    <p>This is a football pickem app for a weekly competetion between users.
-                                        <br>
-                                        React JS, react-router, react-bootstrap, firebase authentication and storage.
-                                        <br>
-                                        <strong>GitHub:</strong>
-                                        <a href="https://github.com/GregNicholas/football-pickem-deploy"
-                                            target="_blank">Football Pickem</a>
-                                    </p>
-                                </div>
-                                <a href="https://football-pickem-45896.web.app/" target="_blank">
-                                    <button class="button">
-                                        <h3>Live Site</h3>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-item">
-                        <div class="project you-brew-project">
-                            <div class="text-container">
-                                <h2 class="project-name">YouBrew</h2>
-                                <div class="project-description">
-                                    <p>This is a responsive, interactive landing page for "YouBrew" homebrew supplies store.
-                                        JavaScript, HTML, CSS, GSAP animations
-                                        <strong>GitHub:</strong> <a href="https://github.com/GregNicholas/BrewYouLandingPage"
-                                            target="_blank">YouBrew</a>
-                                    </p>
-                                </div>
-                                <a href="https://youbrew.netlify.app/">
-                                    <button class="button">
-                                        <h3>Live Demo</h3>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="project-item hidden-projects extra-projects">
                         <div class="project job-listings-project">
                             <div class="text-container">
                                 <h2 class="project-name">Job Listings</h2>
                                 <div class="project-description">
                                     <p>Responsive, interactive, filterable list of jobs. Using React.js, HTML, and CSS
-                                        to recreate a frontend mentor challenge from scratch
+                                        to recreate a frontend mentor challenge from scratch<br>
                                         <strong>GitHub:</strong> <a href="https://github.com/GregNicholas/job-listings"
                                             target="_blank">Job Listings</a>
                                     </p>
                                 </div>
-                                <a href="https://job-listings-d29c51.netlify.app/">
+                                <a href="https://job-listings-d29c51.netlify.app/" target="_blank">
                                     <button class="button">
                                         <h3>Live Demo</h3>
                                     </button>
@@ -172,46 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-item hidden-projects extra-projects">
-                        <div class="project quiz-project">
-                            <div class="text-container">
-                                <h2 class="project-name">Quizzical</h2>
-                                <div class="project-description">
-                                    <p>This is a quiz app in which a user can choose a category and difficulty,
-                                        then take a short quiz and get results.
-                                        <br>
-                                        React, consumes data from opentdb.com
-                                    </p>
-                                </div>
-                                <a href="https://codesandbox.io/s/quizzical-bqcgc" target="_blank">
-                                    <button class="button">
-                                        <h3>CodeSandbox</h3>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item hidden-projects extra-projects">
-                        <div class="project sunset-project">
-                            <div class="text-container">
-                                <h2 class="project-name">Sunset Hills</h2>
-                                <div class="project-description">
-                                    <p>Using React, react-router-dom, HTML and CSS to turn a small 
-                                        array problem into a frontend "game."
-                                        <br>
-                                        <strong>GitHub:</strong>
-                                        <a href="https://github.com/GregNicholas/SunsetHills"
-                                            target="_blank">Sunset Hills</a>
-                                    </p>
-                                </div>
-                                <a href="https://csb-sunset-hills.netlify.app/" target="_blank">
-                                    <button class="button">
-                                        <h3>Live Site</h3>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="project-item hidden-projects extra-projects">
                         <div class="project jetris-project">
                             <div class="text-container">
@@ -232,12 +218,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-item hidden-projects extra-projects">
+                        <div class="project quiz-project">
+                            <div class="text-container">
+                                <h2 class="project-name">Quizzical</h2>
+                                <div class="project-description">
+                                    <p>This is a quiz app in which a user can choose a category and difficulty,
+                                        then take a short quiz and get results.
+                                        <br>
+                                        React, consumes data from opentdb.com
+                                    </p>
+                                </div>
+                                <a href="https://codesandbox.io/s/quizzical-bqcgc" target="_blank">
+                                    <button class="button">
+                                        <h3>CodeSandbox</h3>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-item hidden-projects extra-projects">
                         <div class="project bracket-project">
                             <div class="text-container">
                                 <h2 class="project-name">Playoff Bracket</h2>
                                 <div class="project-description">
-                                    <p>This is an app for choosing winners in the NFL playoffs and viewing potential matchups.
+                                    <p>This is an app for choosing winners in the NFL playoffs and 
+                                        viewing potential matchups calculated based on seeding of the
+                                        chosen winners. User friendly solution for bracket competitions!
                                         <br>
                                         React, mobile first design
                                         <strong>CodeSandbox:</strong> <a
@@ -278,40 +286,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section class="services" id="services">
-    <div class="heading dark">
-        <h2>Services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="content">
-        <div class="servicesBx">
-            <img src="./images/icon2.png" class="inv" alt="">
-            <h2>Web Development</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni officiis eius sequi cum quam, aspernatur, doloribus deserunt voluptatibus quia accusamus fugit illum quo libero odio voluptas laborum sit! Cum!</p>
-        </div>
-        <div class="servicesBx">
-            <img src="./images/icon1.png" class="inv" alt="">
-            <h2>Web Design</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni officiis eius sequi cum quam, aspernatur, doloribus deserunt voluptatibus quia accusamus fugit illum quo libero odio voluptas laborum sit! Cum!</p>
-        </div>
-        <div class="servicesBx">
-            <img src="./images/icon3.png" alt="">
-            <h2>Shopify Site Development</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni officiis eius sequi cum quam, aspernatur, doloribus deserunt voluptatibus quia accusamus fugit illum quo libero odio voluptas laborum sit! Cum!</p>
-        </div>
-        <div class="servicesBx">
-            <img src="./images/icon6.png" alt="">
-            <h2>WordPress Site Development</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni officiis eius sequi cum quam, aspernatur, doloribus deserunt voluptatibus quia accusamus fugit illum quo libero odio voluptas laborum sit! Cum!</p>
-        </div>
-        <div class="servicesBx">
-            <img src="./images/icon5.png" class="inv" alt="">
-            <h2>Content Writing</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam magni officiis eius sequi cum quam, aspernatur, doloribus deserunt voluptatibus quia accusamus fugit illum quo libero odio voluptas laborum sit! Cum!</p>
-        </div>
-    </div>
-</section> -->
 
     <section class="contact" id="contact">
         <div class="heading">
