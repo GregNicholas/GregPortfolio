@@ -28,11 +28,10 @@ section {
     overflow: hidden;
 }
 
-.banner h2 {
-    font-size: 3em;
+.banner h1 {
     color: #fff;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 .name  {
@@ -45,7 +44,7 @@ section {
     animation: growth 2000ms;
     /* animation-timing-function: cubic-bezier(0.4,0,0.8,1.3); */
     animation-fill-mode: backwards;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 @keyframes growth {
@@ -87,6 +86,16 @@ section {
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
+    border-radius: 10px;
+    transition: background .4s;
+}
+
+.btn:hover {
+    background: #0268b7;
+}
+
+.btn:active {
+    box-shadow: 0 0 11px aliceblue;
 }
 
 header {
@@ -291,6 +300,10 @@ img {
     background-image: url(./images/issueTracker.jpg);
 }
 
+.air-quality {
+    background-image: url(./images/AirQscreenshot.png);
+}
+
 .playground-project {
     background-image: url(./images/playground.jpeg);
 }
@@ -315,10 +328,6 @@ img {
     background-image: url(./images/quiz.jpg);
 }
 
-.sunset-project {
-    background-image: url(./images/sunset-hills.png);
-}
-
 .bracket-project{
     background-image: url(./images/playoffs-bracket.png);
 }
@@ -340,12 +349,14 @@ img {
     left: 0;
     bottom: 0;
     background-color: white;
+    border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     transition: height 500ms;
 }
 
 .text-container:hover {
-    height: 17rem;
+    height: 20rem;
+    
 }
 
 .project-name {
@@ -420,6 +431,7 @@ img {
     padding: 1rem;
     font-size: 1rem;
     border: none;
+    border-radius: 10px;
     background: #222;
     color: #fff;
     resize: none;
@@ -435,12 +447,19 @@ img {
 }
 
 .formBx form input[type="submit"] {
-    max-width: 100px;
+    margin: 0;
     background: #2196f3;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
+    transition: background .4s;
+}
+.formBx form input[type="submit"]:hover {
+    background: #0268b7;
+}
+.formBx form input[type="submit"]:active {
+    box-shadow: 0 0 11px #222;
 }
 
 .contactInfo {
@@ -480,9 +499,9 @@ img {
     color: #2196f3;
     margin-bottom: 0;
 }
-
+f
 .copyright {
-    background: #000;
+    background: #111;
     color: #fff;
     text-align: right;
     padding: .1rem 1rem;
@@ -560,15 +579,10 @@ img {
         font-size: 1.5rem;
     }
 
-    .banner h3 {
-        font-size: 1rem;
-    }
-
     .btn {
         margin-top: 0.625rem;
         padding: 0.625rem 1.25rem;
         font-size: 1rem;
-        
     }
 
     .heading h2 {
@@ -605,6 +619,9 @@ img {
     }
     .banner {
         padding: 9.35rem 3.125rem 6.25rem;
+    }
+    .banner h3 {
+        font-size: 1rem;
     }
     section {
         padding: 6.25rem 1.25rem;
