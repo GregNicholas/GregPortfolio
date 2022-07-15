@@ -296,6 +296,10 @@ img {
     background-position: center;
 }
 
+.kanban-project {
+    background-image: url(./images/kanbanguru-sc.png);
+}
+
 .planet-project {
     background-image: url(./images/planetfacts.png);    
 }
