@@ -1,16 +1,22 @@
 const extraProjects = document.getElementsByClassName("extra-projects");
 const toggleButton = document.getElementById("project-toggle");
+const header = document.querySelector('header');
+const menu = document.querySelector('.menu');
+const menuToggle = document.getElementById("btnHamburger");
 
 window.addEventListener('scroll', function () {
-    const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
+    menu.classList.toggle('sticky', window.scrollY > 0);
 });
 
 const toggleMenu = () => {
-    const menuToggle = document.getElementById("btnHamburger");
-    const menu = document.querySelector(".menu");
     menu.classList.toggle('open');
     menuToggle.classList.toggle('open');
+    if(menu.classList.contains('open')){
+        header.classList.add('sticky')
+    } else {
+        header.classList.remove('sticky')
+    }
 }
 
 const toggleProjectView = (e) => {

@@ -26,16 +26,19 @@
             <li><a href="#contact" class="menu-links" onclick="toggleMenu()">Contact</a></li>
         </ul>
     </header>
-
+    
     <section class="banner">
-        <div class="textBx">
-            <h1 class="name">Greg Schoenberg.</h1>
-            <h3>I'm a Front End Web Developer.</h3>
-            <a href="#about" class="btn">About Me</a>
+        <div class="container">
+            <div class="textBx">
+                <h1 class="name">Greg Schoenberg.</h1>
+                <h3>I'm a Front End Web Developer.</h3>
+                <a href="#about" class="btn">About Me</a>
+            </div>
         </div>
     </section>
 
     <section class="about" id="about">
+        <div class="container">
         <div class="heading">
             <h2>About Me</h2>
         </div>
@@ -52,9 +55,11 @@
                 <img src="./images/img1.jpg" class="img" alt="code logo">
             </div>
         </div>
+        </div>
     </section>
 
     <section id="projects" id="work">
+        <div class="container">
         <div class="heading light-heading">
             <h2>Latest Work</h2>
             <p>Some of my recent projects</p>
@@ -351,9 +356,11 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
+        <div class="container">
         <div class="heading">
             <h2>Contact Me</h2>
             <p>I would love to hear from you!</p>
@@ -394,22 +401,21 @@
             </div>
             <div class="formBx">
                 <form action="https://formsubmit.co/gregschoenberg@gmail.com" method="POST">
-                    <h3>Message Me</h3>
+                    <h3>Send a Message</h3>
                     <input type="hidden" name="_subject" value="New email from portfolio!">
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
                     <input type="hidden" name="_next"
                         value="https://gregnicholas.github.io/GregPortfolio/thankyou.html">
                     <textarea type="text" name="message" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
+                    <input class="btn" type="submit" value="Send">
                 </form>
             </div>
         </div>
+        </div>
     </section>
 
-    <div class="copyright" id=copyright>
-
-    </div>
+    <div class="copyright" id=copyright></div>
 
     <script src="script.js">
 
