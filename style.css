@@ -90,7 +90,7 @@ section {
     font-weight: 500;
     border-radius: 10px;
     transition: background .3s;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 5px black;
 }
 
 .btn:hover {
@@ -159,15 +159,15 @@ header a {
     margin: 0 0.9375rem;
     color: #fff;
     text-decoration: none;
+    text-shadow: 1px 1px 5px black;
+}
+
+header.sticky a {
+    text-shadow: none;
 }
 
 .menu {
-    background: rgba(17, 17, 17, 0.4);
-    border-radius: 10px;
     transition: all 0.4s;
-}
-.menu.sticky {
-    background: #fff;
 }
 
 .menu-links {
@@ -666,6 +666,9 @@ img {
     header, header.sticky {
         padding: 1.25rem 1.25rem;
         z-index: 1000;
+    }
+    .header-name {
+        display: none;
     }
     .banner {
         padding: 9.35rem 3.125rem 6.25rem;
