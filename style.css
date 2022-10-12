@@ -378,6 +378,10 @@ img {
     background-image: url(./images/pokemon.jpg);
 }
 
+.sunsethills-project {
+    background-image: url(./images/sunset-hills.png);
+}
+
 .hidden-projects {
     display: none;
 }
