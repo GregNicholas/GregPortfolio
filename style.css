@@ -47,14 +47,17 @@ section {
     animation-timing-function: cubic-bezier(.74,.04,.57,.59);
     animation-fill-mode: backwards;
     font-size: 5rem;
+    text-shadow: 1px 1px 10px black;
 }
 
 @keyframes growth {
     0% {
-      transform: scale(0)
+      transform: scale(0);
+      opacity: 0; 
     }
     100% {
-      transform: scale(1)
+      transform: scale(1);
+      opacity: 1;
     }
   }
 
@@ -578,7 +581,7 @@ img {
         background: #fff;
         transition: 0.5s;
         z-index: 999;
-        border-top: 1px solid rgba(0,0,0,0.2)
+        border-top: 1px solid rgba(0,0,0,0.2);
     }
 
     .menu.open {
@@ -599,7 +602,7 @@ img {
         -webkit-transition: 300ms ease-in-out;
         transition: 300ms ease-in-out;
         -webkit-transform-origin: 3px 1px;
-                transform-origin: 3px 1px;
+        transform-origin: 3px 1px;
     }
     
     .header__toggle span:not(:last-child) {
@@ -607,17 +610,17 @@ img {
     }
 
     .header__toggle.open span:first-child {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
     
     .header__toggle.open span:nth-child(2) {
-    opacity: 0;
+        opacity: 0;
     }
     
     .header__toggle.open span:last-child {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
     }
 
     header.sticky .header__toggle {
@@ -625,7 +628,7 @@ img {
     }
 
     .banner {
-    padding: 9.35rem 3.125rem 6.25rem;
+        padding: 9.35rem 3.125rem 6.25rem;
     }
 
     .banner h2 {
