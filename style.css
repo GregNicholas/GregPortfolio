@@ -406,7 +406,10 @@ img {
     justify-content: space-between;
 }
 
-.text-container:hover {
+/* .text-container:hover {
+    height: 20rem;
+} */
+.project:hover > .text-container {
     height: 20rem;
 }
 
@@ -420,12 +423,18 @@ img {
     font-size: 1rem;
 }
 
+.project-link {
+    margin: .5rem 0 2rem 0;
+    height: fit-content;
+    width: fit-content;
+}
+
 .button {
     border: 5px solid #2196f3;
+    border-radius: 7px;
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.4);
     width: 160px;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.4);
     padding: .3rem;
-    margin: .5rem 0 2rem 0;
     cursor: pointer;
     transition: all 0.5s;
 }
